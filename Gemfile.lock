@@ -1,12 +1,11 @@
 GIT
-  remote: https://github.com/scottweaver/logging-facade.git
+  remote: https://github.com/scottweaver/logging-facade
   revision: 4037c16b57e049892f88db905524891d8e638f03
   specs:
     logging-facade (0.0.1)
 
-GIT
-  remote: https://github.com/scottweaver/ruby-sapjco
-  revision: 4a41258550466532a8f819f28e7b23a2f245e310
+PATH
+  remote: vendor/ruby-sapjco-1.5.1
   specs:
     ruby-sapjco (1.5.1)
       haml
@@ -17,12 +16,20 @@ GEM
   remote: https://rubygems.org/
   specs:
     addressable (2.4.0)
+    coderay (1.1.1)
     ffi (1.9.10-java)
     haml (4.0.7)
       tilt
     launchy (2.4.3-java)
       addressable (~> 2.3)
       spoon (~> 0.0.1)
+    method_source (0.8.2)
+    pry (0.10.3-java)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+      spoon (~> 0.0)
+    slop (3.6.0)
     spoon (0.0.4)
       ffi
     tilt (2.0.2)
@@ -32,6 +39,7 @@ PLATFORMS
 
 DEPENDENCIES
   logging-facade!
+  pry
   ruby-sapjco!
 
 BUNDLED WITH
