@@ -92,5 +92,5 @@ out = rfc.execute do |params, tables|
     }
   ]
 end
-binding.pry
+
 ap out
