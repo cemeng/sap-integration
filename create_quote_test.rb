@@ -1,6 +1,7 @@
 #!/Users/cemeng/.rubies/jruby-9.0.5.0/bin/jruby -w
 
 require "ruby-sapjco"
+require "awesome_print"
 require "yaml"
 require "pry"
 
@@ -16,15 +17,15 @@ out = rfc.execute do |params, tables|
     SPART: "A3",
     VKBUR: "SG10",
     VKGRP: "SG1",
-    EDATU: "24.03.2016",
+    # EDATU: "24.03.2016", # don't want to handle the date yet
     KUNAG: "6001548",
     KUNWE: "6001548",
     KUNNR_VE: "13090171",
     KUNNR_SP: "",
-    ANGDT: "01.03.2016",
-    BNDDT: "01.01.2019",
+    # ANGDT: "01.03.2016",
+    # BNDDT: "01.01.2019",
     BSTNK: "PO NUMBER",
-    BSTDK: "24.03.2016",
+    # BSTDK: "24.03.2016",
     VSBED: "1",
     AUTLF: "1",
     IHREZ: "IHREZ",
@@ -91,5 +92,5 @@ out = rfc.execute do |params, tables|
     }
   ]
 end
-
-puts out
+binding.pry
+ap out
