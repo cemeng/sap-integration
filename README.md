@@ -1,9 +1,20 @@
+Install gem locally:
+```
+cd vendor
+jruby -S gem install logging-facade
+jruby -S gem install ruby-sapjco
+```
+Also install pry and awesome_print as needed
+
+```
 export CLASSPATH=$CLASSPATH:~/prj/sap-integration/jar
+```
 
 Monkey patches:
-- ruby-sapjco-env.rb line 7 should be Logger.logger.info
-- ruby-sapjco.rb hash_into_jco_record function
 
+* ruby-sapjco-env.rb line 7 should be Logger.logger.info
+* ruby-sapjco.rb hash_into_jco_record function
+```
     def hash_into_jco_record(hash, jco_record)
       hash.each do |key, value|
         if (value.class == Hash)
@@ -15,7 +26,8 @@ Monkey patches:
         end
       end
     end
-
-- ruby-sapjco.rb: parse_sap_record_structure function
-
+```
+* ruby-sapjco.rb: parse_sap_record_structure function
+```
   return field_list.to_xml if field_list.class.to_s == "Java::ComSapConnJcoRt::DefaultTable"
+```
