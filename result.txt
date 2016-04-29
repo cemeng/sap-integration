@@ -1,3 +1,8 @@
+I, [2016-04-29T16:20:07.358000 #36647]  INFO -- : sapjco3.jar was successfuly found on the LOAD_PATH
+I, [2016-04-29T16:20:07.462000 #36647]  INFO -- : sapjco3.jar successfuly loaded!
+I, [2016-04-29T16:20:11.449000 #36647]  INFO -- : >>> Default SAPJCo destination has been set to 'test' <<<
+I, [2016-04-29T16:20:11.454000 #36647]  INFO -- : Configuring SAPJCo from /Users/cemeng/prj/sap-integration/config/sapjco.yml.
+I, [2016-04-29T16:20:12.435000 #36647]  INFO -- : Available SAP app server destinations: test.
 {
         :E_VBELN => "",
         :ET_COND => [
@@ -21,3 +26,4 @@
     :IT_VC_VALUE => [
         [0] "<_-RBR1_-P_AU_RFC_SO_VC></_-RBR1_-P_AU_RFC_SO_VC>"
     ]
+}
